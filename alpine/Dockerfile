@@ -22,14 +22,14 @@ RUN apk add --no-cache \
 
 USER liquidsoap
 
-ENV OCAML_VERSION 4.10.0
+ENV OCAML_VERSION 4.07.0
 ENV PATH /home/liquidsoap/.opam/${OCAML_VERSION}/bin:${PATH}
 RUN opam init --disable-sandboxing --auto-setup \
  && opam switch create ${OCAML_VERSION} \
  && opam install --yes alsa cry lame mad taglib \
  && opam clean
 
-ENV LS_VERSION 1.4.2
+ENV LS_VERSION 1.3.7
 RUN opam install --yes liquidsoap.${LS_VERSION} \
  && opam clean
 
