@@ -29,7 +29,7 @@ RUN opam init --disable-sandboxing --auto-setup \
  && opam install --yes alsa cry lame mad taglib \
  && opam clean
 
-ENV LS_VERSION 1.4.2
+ENV LS_VERSION 1.4.1-1
 RUN opam install --yes liquidsoap.${LS_VERSION} \
  && opam clean
 
