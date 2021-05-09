@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos:8
 
 LABEL maintainer="RaBe IT Reaktion <it@rabe.ch>"
 LABEL vendor="Radio Bern RaBe <http://rabe.ch>"
